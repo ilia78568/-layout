@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Lato';
   src: url("./assets/fonts/Lato-Regular.ttf");
@@ -10,6 +14,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -23,10 +34,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header__div {
-  width: 100%;
 }
 
 @media (max-width: 550px) {
@@ -105,5 +112,244 @@
 
 .header__ul li a:hover {
   color: #F06C64;
+}
+
+.main {
+  max-width: 1020px;
+  width: 100%;
+}
+
+.block-swiper {
+  width: 100%;
+  height: 600px;
+  background-color: #F06C64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .block-swiper {
+    height: 420px;
+  }
+}
+
+@media (max-width: 550px) {
+  .block-swiper {
+    height: 220px;
+  }
+}
+
+.block-swiper__phones {
+  width: 796px;
+  height: 483px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .block-swiper__phones {
+    height: 420px;
+  }
+}
+
+@media (max-width: 550px) {
+  .block-swiper__phones {
+    height: 220px;
+  }
+}
+
+.phone-vertical {
+  width: 240px;
+  height: 483px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .phone-vertical {
+    width: 180px;
+    height: 380px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-vertical {
+    margin-left: 20px;
+    width: 80px;
+  }
+}
+
+.phone-vertical_device, .phone-vertical_shadow, .phone-vertical_display {
+  position: relative;
+}
+
+.phone-vertical_device {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .phone-vertical_device {
+    width: 162px;
+    height: 345px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-vertical_device {
+    width: 80px;
+    height: 168px;
+  }
+}
+
+.phone-vertical_shadow {
+  z-index: 1;
+  right: 400px;
+}
+
+@media (max-width: 768px) {
+  .phone-vertical_shadow {
+    width: 180px;
+    height: 381px;
+    right: 301px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-vertical_shadow {
+    width: 88px;
+    height: 186px;
+    right: 142px;
+    top: 10px;
+  }
+}
+
+.phone-vertical_display {
+  z-index: 33;
+  right: 204px;
+}
+
+@media (max-width: 768px) {
+  .phone-vertical_display {
+    width: 141px;
+    height: 251px;
+    right: 149px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-vertical_display {
+    width: 69px;
+    height: 123px;
+    right: 74px;
+  }
+}
+
+.phone-gorizontal {
+  width: 483px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .phone-gorizontal {
+    width: 363px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-gorizontal {
+    width: 177px;
+    height: 92px;
+    margin-right: 10px;
+  }
+}
+
+.phone-gorizontal_device, .phone-gorizontal_shadow, .phone-gorizontal_display {
+  position: relative;
+}
+
+.phone-gorizontal_device {
+  z-index: 2;
+  left: 78px;
+}
+
+@media (max-width: 768px) {
+  .phone-gorizontal_device {
+    width: 345px;
+    height: 163px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-gorizontal_device {
+    width: 168px;
+    height: 79px;
+  }
+}
+
+.phone-gorizontal_shadow {
+  z-index: 1;
+  top: 13px;
+  right: 714px;
+}
+
+@media (max-width: 768px) {
+  .phone-gorizontal_shadow {
+    width: 364px;
+    height: 190px;
+    right: 518px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-gorizontal_shadow {
+    width: 177px;
+    height: 92px;
+    right: 211px;
+  }
+}
+
+.phone-gorizontal_display {
+  z-index: 33;
+  right: 320px;
+}
+
+@media (max-width: 768px) {
+  .phone-gorizontal_display {
+    width: 251px;
+    height: 142px;
+    right: 221px;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-gorizontal_display {
+    width: 123px;
+    height: 69px;
+    right: 69px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
