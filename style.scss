@@ -316,7 +316,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 22px;
-
+width: 90%;
 text-align: justify;
 color: #767E9E;
     }
@@ -329,8 +329,9 @@ color: #767E9E;
     &__buttons {
         display: flex;
         justify-content: space-between;
-        width: 290px;
-        height: 22px;
+        width: 444px;
+
+       
     }
     & h2 {
         font-family: 'Lato';
@@ -380,11 +381,14 @@ padding: 20px 0 0 40px;
     }
 }
 .portfolio__button {
-  width: auto;
+  &:hover {
+     background: rgb(77, 73, 73);
+     cursor: pointer;
+  }
     height: 20px; 
    margin: 10px 0 0 40px;
 
-    border: 1px solid gray;
+    border: 1px solid rgb(68, 67, 67);
     border-radius: 20%;
 
     & span {
@@ -655,4 +659,16 @@ color: #886A30;
         width: 150px;
         margin: 25px auto 0 ;
     }
+}
+.button1 {
+    width: 26px;
+}
+.button2 {
+    width: 79px;
+}
+.button3 {
+    width: 95px;
+}
+.button4 {
+    width: 58px;
 }

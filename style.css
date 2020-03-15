@@ -428,6 +428,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
+  width: 90%;
   text-align: justify;
   color: #767E9E;
 }
@@ -444,8 +445,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 290px;
-  height: 22px;
+  width: 444px;
 }
 
 .block-portfolio h2 {
@@ -501,11 +501,15 @@
 }
 
 .portfolio__button {
-  width: auto;
   height: 20px;
   margin: 10px 0 0 40px;
-  border: 1px solid gray;
+  border: 1px solid #444343;
   border-radius: 20%;
+}
+
+.portfolio__button:hover {
+  background: #4d4949;
+  cursor: pointer;
 }
 
 .portfolio__button span {
@@ -809,5 +813,21 @@
 .footer .persons__content-links {
   width: 150px;
   margin: 25px auto 0;
+}
+
+.button1 {
+  width: 26px;
+}
+
+.button2 {
+  width: 79px;
+}
+
+.button3 {
+  width: 95px;
+}
+
+.button4 {
+  width: 58px;
 }
 /*# sourceMappingURL=style.css.map */
