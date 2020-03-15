@@ -253,3 +253,246 @@ height: 79px;
 
     }
 }
+
+.block-services {
+    width: 100%;
+    
+    background: #F2F2F2;
+    &__head h2 {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 36px;
+color: #666D89;
+padding: 30px 0 0 30px;
+    }
+    &__head p{
+        width: 94%;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #767E9E;
+        padding: 30px 10px 0 30px;
+    }
+    &__parameters {
+      padding-top: 40px;
+        width: 90%;
+        
+        margin: 0 auto ;
+       margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+.parameters__content {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 104px;
+ 
+
+    & img {
+        margin-bottom: 40px;
+    }
+    &_text {
+        width: 222px;
+    }
+    &_text h3 {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 18px;
+color: #666D89;
+    }
+    &_text p {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 22px;
+
+text-align: justify;
+color: #767E9E;
+    }
+}
+
+.block-portfolio {
+    width: 100%;
+  
+    background: $color-background-black;
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        height: 22px;
+    }
+    & h2 {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 36px;
+color: #666D89;
+padding: 40px 0 0 40px;
+    }
+    & p {
+        font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+color: #767E9E;
+padding: 20px 0 0 40px;
+    }
+    &__images {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 90%;
+        
+       
+        display: flex;
+        justify-content: space-around;
+        
+        flex-wrap: wrap;
+        &_image {
+            width: 220px;
+            height: 200px;
+            @media (max-width: $media-header) {
+                width: 161px;
+               height: 138px;
+            }
+            & img {
+                @media (max-width: $media-header) {
+               width: 151px;
+               height: 128px;
+              
+                }
+            }
+           
+
+        }
+    }
+}
+.portfolio__button {
+  width: auto;
+    height: 20px; 
+   margin: 10px 0 0 40px;
+
+    border: 1px solid gray;
+    border-radius: 20%;
+
+    & span {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+text-align: center;
+
+color: #DEDEDE;
+    }
+}
+
+.block-about {
+    width: 100%;
+    background: #DEDEDE;
+   
+    & h2 {
+        padding: 20px 0 0 30px;
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 36px;
+color: #666D89;
+
+    }
+    & p {
+        width: 94%;
+        font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 0 0 30px;
+    color: #767E9E;
+    }
+    &__persons {
+        width: 90%;
+        height: 443px;
+        
+        margin: 0 auto;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $media-header) {
+            flex-wrap: wrap;
+            margin-top: 37px;
+            justify-content: center;
+            height: auto;
+        }
+        
+    }
+}
+.persons__content {
+    width: 318px;
+    height: 382px;
+    @media (max-width: $media-header) {
+        height: 430px;
+    }
+      &  img {
+        width: 90%;
+            height: auto;
+        @media (max-width: $media-header) {
+            
+        }
+        }
+    & p {
+        padding: 15px 0 0 0;
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 18px;
+/* or 100% */
+
+
+/* section-headers */
+
+color: #666D89;
+    }
+    & p + p {
+        padding: 5px 0 0 0;
+        width: 80%;
+       
+        font-family: 'Lato';
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 22px;
+/* or 183% */
+
+text-align: justify;
+
+/* section-descriptions */
+
+color: #767E9E;
+    }
+    &-links {
+        width: 60%;
+        height: 32px;
+        
+        display: flex;
+        justify-content: space-between;
+        
+        & img:hover {
+            width: 110%;
+        }
+    }
+}
