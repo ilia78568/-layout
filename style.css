@@ -23,7 +23,27 @@
           align-items: center;
 }
 
+.block-swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrow-right {
+  width: 10px;
+  height: 10px;
+  border: 2px solid gray;
+}
+
+.block-swiper2 {
+  width: 100%;
+  height: 600px;
+  background: red;
+  display: none;
+}
+
 .header {
+  top: 0;
   max-width: 1020px;
   height: 95px;
   background: #2D303A;
@@ -59,9 +79,6 @@
 }
 
 .header__menu {
-  width: 20px;
-  height: 20px;
-  background: #6e5656;
   display: none;
 }
 
@@ -81,6 +98,10 @@
   line-height: 30px;
   color: #FFFFFF;
   margin: 29px 0 41px 40px;
+}
+
+.header__text {
+  display: inline;
 }
 
 .header__text_red {
@@ -120,7 +141,7 @@
   width: 100%;
 }
 
-.block-swiper {
+.block-swiper1 {
   width: 100%;
   height: 600px;
   background-color: #F06C64;
@@ -136,18 +157,18 @@
 }
 
 @media (max-width: 768px) {
-  .block-swiper {
+  .block-swiper1 {
     height: 420px;
   }
 }
 
 @media (max-width: 550px) {
-  .block-swiper {
+  .block-swiper1 {
     height: 220px;
   }
 }
 
-.block-swiper__phones {
+.block-swiper1__phones {
   width: 796px;
   height: 483px;
   display: -webkit-box;
@@ -159,13 +180,13 @@
 }
 
 @media (max-width: 768px) {
-  .block-swiper__phones {
+  .block-swiper1__phones {
     height: 420px;
   }
 }
 
 @media (max-width: 550px) {
-  .block-swiper__phones {
+  .block-swiper1__phones {
     height: 220px;
   }
 }
@@ -370,7 +391,7 @@
 }
 
 .block-services__head p {
-  width: 94%;
+  width: 86%;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -448,6 +469,14 @@
   width: 444px;
 }
 
+@media (max-width: 550px) {
+  .block-portfolio__buttons {
+    width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .block-portfolio h2 {
   font-family: 'Lato';
   font-style: normal;
@@ -459,7 +488,7 @@
 }
 
 .block-portfolio p {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -501,7 +530,6 @@
 }
 
 .portfolio__button {
-  height: 20px;
   margin: 10px 0 0 40px;
   border: 1px solid #444343;
   border-radius: 20%;
@@ -538,7 +566,7 @@
 }
 
 .block-about p {
-  width: 94%;
+  width: 86%;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -550,7 +578,7 @@
 
 .block-about__persons {
   width: 90%;
-  height: 443px;
+  height: 470px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,5 +857,74 @@
 
 .button4 {
   width: 58px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  margin-top: 70px;
+}
+
+.ul-menu {
+  margin: 0;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ul-menu li a {
+  font-size: 24px;
+}
+
+.menu-mobile {
+  margin: 30px 0 0 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.menu__phone {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 841px;
+  background: #2D303A;
+  position: fixed;
+  top: 0;
+  z-index: 55;
+}
+
+.menu__phone-div {
+  width: 267px;
+  margin: 30px 0 0 100px;
+}
+
+.menu__phone h1,
+.menu__phone span {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19.6875px;
+  line-height: 24px;
+  display: inline;
+  color: #FFFFFF;
+}
+
+.menu__phone span {
+  color: #F06C64;
+}
+
+.border-image {
+  border: 3px solid #f1efef;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,22 +6,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Layout</title>
 </head>
-<body class="body">
-    <header class="header">
-        <div class="header__menu"></div>
-        <div class="header__text"> <h1 >SINGOLO <span class="header__text_red">*</span></h1></div>
+<body class="body " >
+ 
+    <header class="header" id="header" >
+        
+        <div class="header__menu"  id="menu"><img src="./assets/images/Burger-menu-icon.png" alt=""></div>
+        <div class="header__text" id="headerText"> <h1 >SINGOLO <span class="header__text_red">*</span></h1></div>
     
        <nav class="header__nav"><ul class="header__ul">
-           <li><a href="">HOME</a></li>
-           <li><a href="">SERVICES</a></li>
-           <li><a href="">PORTFOLIO</a></li>
-           <li><a href="">ABOUT</a></li>
-           <li><a href="">CONTACT</a></li>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#services">SERVICES</a></li>
+           <li><a href="#portfolio">PORTFOLIO</a></li>
+           <li><a href="#about">ABOUT</a></li>
+           <li><a href="#contact">CONTACT</a></li>
        </ul></nav>
     </header>
-    <main class="main">
-        <div class="block-swiper">
-            <div class="block-swiper__phones">
+    <main class="main" id="main">
+        <div class="menu__phone" id="menuPhone">
+            <div class="header__menu menu-mobile" id="menu-mobile"><img src="./assets/images/Burger-menu-icon.png"  alt=""></div>
+            <div class="menu__phone-div"><h1>SINGOLO <span class="header__text_red">*</span></h1></div>
+            <nav class="header__nav nav-menu"><ul class="header__ul ul-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul></nav>
+        </div>
+        <div class="block-swiper"> 
+            <div class="block-swiper1 block" id="block-swiper1">
+                <div class="block-swiper1__phones">
                 <div class="phone-vertical">
                     <img src="./assets/images/phone-vertical.svg" alt="" class="phone-vertical_device">
                 <img src="./assets/images/phone-vertical-display.png" alt="" class="phone-vertical_display">
@@ -34,7 +48,9 @@
              </div>
             </div>
         </div>
-        <div class="block-services">
+       
+    </div>
+        <div class="block-services " id="services">
             <section class="block-services__head">
                 <h2>Our services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -71,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="block-portfolio">
+        <div class="block-portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="block-portfolio__buttons">
@@ -80,22 +96,22 @@
                 <div class="portfolio__button button3"><span>Graphic Design</span></div>
                 <div class="portfolio__button button4"><span>Artwork</span></div>
             </div>
-            <div class="block-portfolio__images">
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-1.png" alt="Portfolio 1"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-2.png" alt="Portfolio 2"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-3.png" alt="Portfolio 3"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-4.png" alt="Portfolio 4"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-5.png" alt="Portfolio 5"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-6.png" alt="Portfolio 6"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-7.png" alt="Portfolio 7"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-8.png" alt="Portfolio 8"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-9.png" alt="Portfolio 9"></div>
-                <div class="block-portfolio__images_image"><img src="./assets/images/portfolio-10.png" alt="Portfolio 10"></div>
-                <div class="block-portfolio__images_image"><img class="mobil_disappeared" src="./assets/images/portfolio-11.png" alt="Portfolio 11"></div>
-                <div class="block-portfolio__images_image"><img class="mobil_disappeared" src="./assets/images/portfolio-12.png" alt="Portfolio 12"></div>
+            <div class="block-portfolio__images" id="div-portfolio" >
+                <div class="block-portfolio__images_image" ><img id="portfolioImage" src="./assets/images/portfolio-1.png" alt="Portfolio 1"></div>
+                <div class="block-portfolio__images_image" ><img id="portfolioImage" src="./assets/images/portfolio-2.png" alt="Portfolio 2"></div>
+                <div class="block-portfolio__images_image"><img  id="portfolioImage" src="./assets/images/portfolio-3.png" alt="Portfolio 3"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-4.png" alt="Portfolio 4"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-5.png" alt="Portfolio 5"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-6.png" alt="Portfolio 6"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-7.png" alt="Portfolio 7"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-8.png" alt="Portfolio 8"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-9.png" alt="Portfolio 9"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" src="./assets/images/portfolio-10.png" alt="Portfolio 10"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" class="mobil_disappeared" src="./assets/images/portfolio-11.png" alt="Portfolio 11"></div>
+                <div class="block-portfolio__images_image"><img id="portfolioImage" class="mobil_disappeared" src="./assets/images/portfolio-12.png" alt="Portfolio 12"></div>
             </div>
         </div>
-        <div class="block-about">
+        <div class="block-about" id="about">
             <h2>About us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -127,13 +143,13 @@
                             </div>
                            </div>
                 </div>
-                <div class="block-quote">
+                <div class="block-quote" id="contact">
                     <h2>Get a Quote</h2>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                          <div class="block-quote__forms">
                             
-                                 <form class="div-forms" action="">
+                                 <form class="div-forms" action="" onsubmit="dd();">
                                      <input class="form_narrow" type="text" value="Name (required)">
                                      <input class="form_narrow" type="text" value="Email (required)">
                                      <input class="form_narrow" type="text" value="Subject">
@@ -164,5 +180,6 @@
             <a href="https://twitter.com/" target="_black"><img src="./assets/images/ico-twitter.svg" alt="Link twitter"></a>
         </div>
     </footer>
+    <script src="code.js"></script>
 </body>
 </html>
