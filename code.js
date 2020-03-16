@@ -14,7 +14,6 @@ menuMobile.addEventListener('click', () => {
 
 
 document.querySelector('#div-portfolio').addEventListener('click', () => {
-    console.log(event.target.id);
     if(event.target.id === 'portfolioImage') {
         document.querySelectorAll('#portfolioImage').forEach((element) => {
             element.classList.remove('border-image');
@@ -23,6 +22,13 @@ document.querySelector('#div-portfolio').addEventListener('click', () => {
     }
 })
 
-function dd() {
+document.querySelector('.main').addEventListener('click', () => {
+    if (event.target.id != 'menu-mobile' ) {
+        document.getElementById('menuPhone').style.display = 'none';
+    document.getElementById('headerText').style.display = 'block';
+    }
+})
+
+function sendInfo() {
     alert('Письмо отправлено');
 }
